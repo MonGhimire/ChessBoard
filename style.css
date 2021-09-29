@@ -31,10 +31,6 @@ div {
     flex-grow: 1;
 }
 
-
-
-
-
 .Row1:nth-child(odd), 
 .Row3:nth-child(odd), 
 .Row5:nth-child(odd), 
@@ -77,20 +73,32 @@ div {
     color: rgb(193,154,107);
 }
 
+
+
+/* HOVER EFFECTS ON ROWS,P-TAGS & SPAN. */
+
+div:hover{
+    border: 10px solid tomato;
+}
+
+
 .special span {
     display: none;
 }
 
 .special:hover>p {
     display: none; 
+    
 }
 
 .special:hover>span {
     display: block;
+    transition: 1.5s;
     font-size: 50px;
     font-weight: bolder;
     padding-right: 10px;
     color: rgba(199, 180, 54, 0.705);
+    
 }
 
 .Row3 p{
@@ -102,35 +110,35 @@ div {
     display: block;
     font-size: 60px;
     color: rgb(193,154,107);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .soldier2:hover~.Row3 .pawn2{
     display: block;
     font-size: 60px;
     color: rgb(193,154,107);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .soldier3:hover~.Row3 .pawn3{
     display: block;
     font-size: 60px;
     color: rgb(193,154,107);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .soldier4:hover~.Row3 .pawn4{
     display: block;
     font-size: 60px;
     color: rgb(193,154,107);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .soldier5:hover~.Row3 .pawn5{
     display: block;
     font-size: 60px;
     color: rgb(193,154,107);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 
@@ -138,14 +146,12 @@ div {
     display: block;
     font-size: 60px;
     color: rgb(193,154,107);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 
-.Row3 span {
-    display: none;
-}
 
+/* TOGGLE */
 label {
     margin: 0 auto;
 }
