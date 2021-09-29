@@ -1,0 +1,209 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color:#af111b;
+}
+
+
+main {
+    border: 5px solid black;
+    height: 51rem;
+    width: 51rem;
+    margin: 2em auto;  
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+div {
+    height: 12.5%;
+    width: 12.5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+
+
+
+.Row1:nth-child(odd), 
+.Row3:nth-child(odd), 
+.Row5:nth-child(odd), 
+.Row7:nth-child(odd),
+.Row2:nth-child(even),
+.Row4:nth-child(even),
+.Row6:nth-child(even),
+.Row8:nth-child(even) {
+    background-color: black;
+}
+
+.Row1:nth-child(even), 
+.Row3:nth-child(even), 
+.Row5:nth-child(even), 
+.Row7:nth-child(even), 
+.Row2:nth-child(odd),
+.Row4:nth-child(odd),
+.Row6:nth-child(odd),
+.Row8:nth-child(odd) {
+    background-color:white;
+}
+
+.special {
+    display: flex;
+    /* flex-direction: column; */  
+}
+
+.Row1 .Row2{
+    font-size: 60px;
+    color: rgb(193,154,107);
+}
+
+.Row7, .Row8{
+    font-size: 60px;
+    color: #e6dcaf;
+}
+
+.Row1 p, .Row2 p{
+    font-size: 60px;
+    color: rgb(193,154,107);
+}
+
+.special span {
+    display: none;
+}
+
+.special:hover>p {
+    display: none; 
+}
+
+.special:hover>span {
+    display: block;
+    font-size: 50px;
+    font-weight: bolder;
+    padding-right: 10px;
+    color: rgba(199, 180, 54, 0.705);
+}
+
+.Row3 p{
+    display: none;
+}
+
+
+.soldier1:hover~.Row3 .pawn1{
+    display: block;
+    font-size: 60px;
+    color: rgb(193,154,107);
+    transition: 1s;
+}
+
+.soldier2:hover~.Row3 .pawn2{
+    display: block;
+    font-size: 60px;
+    color: rgb(193,154,107);
+    transition: 1s;
+}
+
+.soldier3:hover~.Row3 .pawn3{
+    display: block;
+    font-size: 60px;
+    color: rgb(193,154,107);
+    transition: 1s;
+}
+
+.soldier4:hover~.Row3 .pawn4{
+    display: block;
+    font-size: 60px;
+    color: rgb(193,154,107);
+    transition: 1s;
+}
+
+.soldier5:hover~.Row3 .pawn5{
+    display: block;
+    font-size: 60px;
+    color: rgb(193,154,107);
+    transition: 1s;
+}
+
+
+.soldier6:hover~.Row3 .pawn6{
+    display: block;
+    font-size: 60px;
+    color: rgb(193,154,107);
+    transition: 1s;
+}
+
+
+.Row3 span {
+    display: none;
+}
+
+label {
+    margin: 0 auto;
+}
+
+
+.Toggle {
+    width: 80px;
+    height: 40px;
+    background-color:  rgb(193,154,107);
+    display: block;
+    border-radius: 40px;
+    transition: .1s;
+}
+
+.toggleChild {
+    width: 50%;
+    height: 100%;
+    background-color:  #f2f0e6;
+    border-radius: 50%;
+    translate: .1s;
+}
+
+input:checked~.Toggle .toggleChild{
+    transform: translate(100%);
+}
+
+input:checked~main {
+    transform: rotate(90deg);
+}
+
+input {
+    display: none;
+}
+
+
+.Row3:hover span {
+    display: block;
+    font-size: 40px;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
